@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+:root {
+    --green-accents: #84b56b;
+    --pink-accents: #f68bb8;
+}
+
 
 
 * {
@@ -12,7 +17,7 @@ body {
     margin: 0;
     overflow-x:hidden;
     background-color: #333;
-    background-image: url("https://www.freevector.com/uploads/vector/preview/28772/Red_Japanese_Wave_Seamless_Pattern.jpg");
+    background-image: url("https://t3.ftcdn.net/jpg/03/98/44/06/360_F_398440694_6oAhzAwD8HQi76XWCLMyqwPAQAKt5fL2.jpg");
     color:#222;
 }
 
@@ -39,7 +44,7 @@ body {
 }
 
 .circle {
-    background-color: red;
+    background-color: var(--green-accents);
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -102,7 +107,7 @@ nav ul li {
     transform: translateX(-100%);
     transition: transform 0.4s ease-in;
     background-color: #fafafa;
-    padding: 30px;
+    padding: 20px;
     border-radius: 25px;
 }
 
@@ -131,7 +136,7 @@ nav ul li + li + li {
 
 .content h1 {
     margin: 0;
-    color:red;
+    color:var(--green-accents)
 }
 
 .content small {
@@ -160,20 +165,20 @@ nav ul li + li + li {
 
 a:link {
     text-decoration: none;
-    color: red;
+    color: var(--green-accents)
 }
 
 a:visited {
     text-decoration: none;
-    color: red;
+    color: var(--green-accents)
 }
 
 a:hover {
     text-decoration: none;
-    color: #282445
+    color: var(--pink-accents)
 }
 
 a:active {
     text-decoration: none;
-    color: red;
+    color: var(--green-accents)
 }
