@@ -4,14 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>My Project</title>
+    <title>Rotating Navigation</title>
 </head>
 <body>
-    <h1>Project Starter</h1>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button class="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Amazing Article</h1>
+            <small>Florin Pop</small>
+            <p>Dignified composed shriek madness chains shrouded pale too great a passion
+                demure acutely dopplegänger aberrant moon. Somnolent affliction blind revealed 
+                sulfurous. Cadence candelabrum envious mystery misfortune despair cartilaginous 
+                virginal take the air gesticulation alarum. Cruel haunting revealed in prayer 
+                shriek moon; endure charnel. Chapter mysterious providence fallen thirst sanctuary 
+                suffer myself to memory anguish such grotesquerie lachrymose ethereal dark. 
+                Damned dull gossamer enmeshed caretaker masonry heavy-hearted monstrous nothing. 
+                Obscure enamored utterance smothered etiolated reverie ossuary enjoins.</p>
+
+            <h3>My Dog</h3>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhYZGBgYGB4
+            ZHRwcHBoYHBwaGRoaHBoaHBocIS4lHB4rIRgaJzgnKy8xNTU1HCQ7QDs0Py40NTEBDAwMEA8QHhISHD0lISs0NDE
+            2NDQ0NDQ0NDQ0NjE0NDQ0NDQ3NDE0NDQxNDE0NDQ0MTQxNDQ0NDQ0ND80NDQ0NP/AABEIALcBEwMBIgACEQEDEQH
+            /xAAbAAEAAQUBAAAAAAAAAAAAAAAABQECBAYHA//EADoQAAEDAgQCCAQFBAIDAQAAAAEAAhEDIQQFMUESUQYiYXG
+            BkaHwEzKx0QdCweHxFFJicoKyIySiFf/EABgBAQEBAQEAAAAAAAAAAAAAAAACAQME/8QAIxEBAQACAgICAgMBAAA
+            AAAAAAAECESExAxJBURNxBIGRI//aAAwDAQACEQMRAD8A7MiIgKhKqvJxlB6KqoFVAREQEREBEVCUFUVt1UFBVER
+            AREQEREBERAVAVQlUYgvREQEREBERARFaTyQXIrQeauQEREBEXmXeSATPcqhvNGtV6AiIgIiICIiArOavVuiAQqO
+            QgK4BBVERAREQEREBWuKoT5q0XQIXoAgCqgIiICIiAiIgtckI4KhKCs7I1UA8vqr0BERAVgar0QEREBEXnUqBolx
+            AHagvRQ9fpBSbMS4jl7usF/StgbPCQfRRfJjPlXpfpsyKKy7OWVQS0EQJM7eK8sVngB4abeI+P0F1vtNbTeO00ii
+            cHmT3/NTLe3byKzDiUmUpOWSAqrCOLO11RuLO/vvT2jdM5FhHGRM+7q12L5d3intDTPlFFuxRvF4Pv32L1ZiCntD
+            TPRYlPF816/1AW7jNPVzZQBQeb558ISBYDUqBwv4gU+INqQJtbVTfJJdKmNre1VYuCxrKreJjgR2LJVS7SqiItBE
+            RAREQFQhVRAREQEREBERBREUZnmZtw9Ivcb6NG5Ky2SbrZN8Gb5wyg08RHFFh91zbPOlD6hIJ6vIWHpqofMs0c9x
+            LiTJmT2/VRLsawamTyHqvLllln+naYzH9s52a1HaFwO1rfyvfKn1q9YUWgy/UmYAGrz2D7DdQLM4Adfi7wNPW63z
+            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"/>
+            <p>Dignified composed shriek madness chains shrouded pale too great a passion
+                demure acutely dopplegänger aberrant moon. Somnolent affliction blind revealed 
+                sulfurous. Cadence candelabrum envious mystery misfortune despair cartilaginous 
+                virginal take the air gesticulation alarum. Cruel haunting revealed in prayer 
+                shriek moon; endure charnel. Chapter mysterious providence fallen thirst sanctuary 
+                suffer myself to memory anguish such grotesquerie lachrymose ethereal dark. 
+                Damned dull gossamer enmeshed caretaker masonry heavy-hearted monstrous nothing. 
+                Obscure enamored utterance smothered etiolated reverie ossuary enjoins.</p>
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
